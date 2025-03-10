@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTcat+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="password-verification">
+        <h2>Enter Password to Access HOTcat+</h2>
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button onclick="verifyPassword()">Submit</button>
+    </div>
+
+    <div id="content" class="hidden">
+        <header>
+            <h1>HOTcat+</h1>
+            <div id="uploader">
+                <h2>Upload Album</h2>
+                <input type="text" id="album-title" placeholder="Album Title">
+                <input type="file" id="album-cover" accept="image/*">
+                <button onclick="uploadAlbum()">Upload Album</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="albums">
+                <!-- Albums will be dynamically added here -->
+            </div>
+        </main>
+
+        <footer>
+            <div id="music-player">
+                <audio id="audio-player" controls></audio>
+                <p id="now-playing">Now Playing: None</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #ff9800;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+#password-verification {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#content.hidden {
+    display: none;
+}
+
+#uploader {
+    margin: 20px 0;
+}
+
+#albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.album img {
+    max-width: 200px;
+    height: auto;
+}
+
+.album-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#music-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff9800;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#now-playing {
+    color: #fff;
+    margin-top: 5px;
+}
