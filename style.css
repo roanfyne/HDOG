@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 header {
@@ -19,7 +20,7 @@ h1 {
     margin-top: 100px;
 }
 
-#content.hidden {
+.hidden {
     display: none;
 }
 
@@ -58,9 +59,14 @@ h1 {
     background-color: #ff9800;
     text-align: center;
     padding: 10px 0;
+    z-index: 1000; /* Ensure the music player is above other content */
 }
 
 #now-playing {
     color: #fff;
     margin-top: 5px;
+}
+
+main {
+    margin-bottom: 80px; /* Space for the fixed music player */
 }
